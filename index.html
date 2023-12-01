@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/favicon1.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/79954174d7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Awesome Box shadow Generator</title>
+  </head>
+  <body>
+    <!-- button container for category -->
+    <div class="button-container"></div>
+    <!-- all shadow box container -->
+    <div id="box-container"></div>
+
+    <!-- this is box shadow generator section -->
+    <div class="box-shadow-generator-container">
+      <div class="box-content-header">
+        <h1>create your own box shadow</h1>
+        <p>A free tool that helps you generate box shadows for Vanilla CSS with ease.</p>
+      </div>
+       
+      <!-- this is parent container of input output section -->
+      <div class="generator-content"> 
+        <!-- this is output section -->
+        
+          <div id="output-section">
+          
+            <small
+            ><span>h-offset:</span> positive value means right side shadow.negative value means left
+            side shadow.</small
+          >
+          <small
+            ><span>v-offset:</span> positive value means below side shadow.negative value means
+            above side shadow.</small
+          >
+          <small><span>blur:</span> Optional. The blur radius.</small>
+          <small
+            ><span>spread:</span> Optional.A positive value increases the size of the shadow, a
+            negative value decreases the size of the shadow.</small
+          >
+          <small><span>color:</span> Optional. The color of the shadow.</small>
+          <small
+            ><span>inset:</span> Optional. Changes the shadow from an outer shadow (outset) to an
+            inner shadow.</small
+          >
+  
+        </div>
+      
+         
+        <!-- this is input section -->
+        <div class="input section">
+
+          <div class="btn-container">
+            <button id="add-layer-btn" title="add-layer"><i class="fa-solid fa-square-plus"></i></button>
+            <button id="random-btn" title="Generatly random"><i class="fa-solid fa-shuffle"></i></button>
+            <button id="reset-btn" title="reset layer"><i class="fa-solid fa-rotate"></i></button>
+            <button id="copy-btn" title="copy shadow text"><i class="fa-solid fa-clone"></i></button>
+          </div>
+
+          <div id="layer-container">
+    
+            <div class="single-layer">
+              <div>
+                <h4 class="offset-indicate">H</h4>
+                <input type="number" value="0" class="input-field" />
+                <span><span id="h-offset">0</span> px horizontal offset</span>
+              </div>
+
+              <div>
+                <h4 class="offset-indicate">V</h4>
+                <input type="number" value="2" class="input-field" />
+                <span><span id="v-offset">2</span> px vertical offset</span>
+              </div>
+
+              <div>
+                <h4 class="offset-indicate">B</h4>
+                <input type="number" value="8" class="input-field" />
+                <span><span id="blur-value">8</span> px blur</span>
+              </div>
+
+              <div>
+                <h4 class="offset-indicate">S</h4>
+                <input type="number" value="0" class="input-field" />
+                <span><span id="spread-value" >0</span> px spread</span>
+              </div>
+
+              <div>
+                <h4 class="offset-indicate" >C</h4>
+                <input type="text" value="#636363" class="type-color" data-id="color"/>
+                <input class="color-input color-style" value="#636363" type="color" data-id="color1"/>
+                <input
+                  type="range"
+                  class="alpha"
+                  min="0"
+                  max="1"
+                  step="0.010"
+                  value="0.2"
+                  data-id="opacity"
+                />
+                <input type="color" value="#636363" class="opacity-color" class="color-style" data-id="opacity1"/>
+              </div>
+
+              <div>
+                <input type="checkbox" class="checkbox" id="checkbox"/>
+                <span>inset</span>
+              </div>
+
+            
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

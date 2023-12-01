@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Fira+Sans&family=Lato&family=Montserrat:wght@300;400;500&family=Poppins:wght@200;400&family=Ubuntu:wght@500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+body {
+  background-color: #fafafa;
+  width: 100%;
+  height: 100%;
+}
+
+
+#box-container{
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,200px));
+    grid-template-rows: repeat(auto-fit,minmax(150px,200px));
+    grid-auto-rows: 200px;
+    gap: 70px;
+    justify-content: center;
+}
+#box-container div span,h5{
+    display: none;
+}
+
+.show{
+    display: block;
+    color: rgb(143, 233, 179);
+   
+}
+.transition{
+    
+    animation-name: example;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    position: relative;
+}
+
+@keyframes example{
+    0%{
+        background-color:rgb(255, 255, 255); transform: scale(1);
+    }
+    100%  {background-color:rgb(255, 255, 255); transform: scale(0.1);}
+}
+
+.button-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.category-btn{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(255, 255, 179);
+    box-shadow: 0px 3px 6px 0px rgba(140, 149, 159, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.active{
+    border: 2px solid rgb(12, 12, 12);
+}
+/* responsive */
+ @media screen and (max-width: 490px) {
+  #output-section{
+    width: 90%;
+  }
+  .input-section{
+    width: 90%;
+  }
+  .single-layer{
+    width: 80%;
+    height: 350px;
+    font-size: 0.8rem;
+  }
+ 
+  .single-layer div .input-field{
+    width: 100px;
+  }
+  .alpha{
+    display: inline-block;
+  }
+  
+}
+
+.box-content-header h1{
+    color: #F56565;
+    text-transform: capitalize;
+}
+.box-content-header p {
+    color: gray;
+    font-size: 1rem;
+}
+
+.box-shadow-generator-container{ 
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff;
+    margin-bottom: 70px;
+    padding-bottom: 60px;
+   
+}
+
+.box-shadow-generator-container .box-content-header{
+    text-align: center;
+    padding: 50px 0px 35px;
+   
+}
+
+.generator-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,500px));
+    gap: 10px;
+    justify-content: space-evenly;
+}
+
+#output-section{
+    width: 95%;
+    margin: 15px;
+    height: 440px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 25px 21px;
+    border-radius: 5px;
+}
+.input-section{
+    width: 100%;
+}
+
+#output-section small{
+    display: block;
+    padding:5px;
+    color: rgb(123, 123, 123);
+}
+
+#output-section small span{
+ color: rgb(168, 122, 233);
+}
+
+
+
+.btn-container button{
+    margin-top: 10px;
+    margin-left: 12px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: none;
+}
+
+.fa-square-plus{
+    color: rgb(112, 219, 115);
+}
+.fa-shuffle{
+    color:#9F7AEA
+}
+.fa-rotate{
+    color: #F56565;
+}
+.fa-clone{
+    color: #A0AEC0;
+}
+
+#layer-container{
+    margin-top: 10px;
+}
+
+.single-layer{
+    width: 95%;
+    height: 210px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px;
+    position: relative;
+}
+.single-layer div{
+    display: flex;
+    margin-bottom:10px ;
+    
+}
+#delete-btn{
+    position: absolute;
+    left: 90%;
+    right: 10px;
+    top: 10px;
+    border: none;
+    background: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.offset-indicate{
+    background-color: rgb(244, 244, 172);
+    width: 40px;
+    height: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin:0px 10px 0px 0px;
+    border-radius: 5px;
+}
+.color-style{
+    border:none ;
+    background: none;
+    border-radius: 10px;
+    height:25px;
+}
+
+.single-layer div .input-field{
+  height: 20px;
+  width: 150px;
+  margin-right: 10px;
+  background-color: rgb(231, 236, 239);
+  box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.116);
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.type-color{
+  height: 20px;
+  width: 150px;
+  margin-right: 10px;
+  background-color: rgb(231, 236, 239);
+  box-shadow: 0px 8px 24px 0px rgba(140, 149, 159, 0.116);
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-weight: 600;
+  text-align: center;
+}
+input[type="range"] {
+    accent-color: #A0AEC0;
+  }
+
+.opacity-color{
+    opacity: 0.2;
+    color: rgb(99, 99, 99)
+}
+
+#checkbox{
+    margin-right: 5px;
+    color: rgb(99, 99, 99);
+}
